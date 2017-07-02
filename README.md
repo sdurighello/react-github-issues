@@ -1,3 +1,55 @@
+# GitHub API Assignment
+
+<div>
+  <p>
+    <i>Using github issues API: <a href="https://developer.github.com/v3/issues/">https://developer.github.com/v3/issues</a></i>
+  </p>
+  <p><b>Create a small application that has these features:</b></p>
+  <ul>
+    <li>List of issues</li>
+    <ul>
+      <li>Issue details with comments (when clicking on the item in issue list)</li>
+      <li>Add some metadata as read only to the view(Assignee and labels if any for example)</li>
+      <li>Nothing is editable on issue</li>
+    </ul>
+    <li>Ability to add/edit comment on the issue.(basic CRUD)</li>
+  </ul>
+  <p><b>Notes:</b></p>
+  <ul>
+    <li>No need any fancy styles. plain and simple with least amount of effort. We are not looking into your css skills.</li>
+    <li>Layout must be done using flex box.</li>
+    <li>Github repo can hardcoded to the one you will use for this project or any other if you wish.</li>
+    <li>Result of task must be a link to Github repo containing project source and readme</li>
+    <li>Tech: React/Redux anything you want after that, you can use any seed that is on the interwebz :)</li>
+    <li>At least one meaningful automated test present with framework of you choice</li>
+  </ul>
+</div>
+
+---
+
+# Assignment solution
+
+#### How to use it
+* Navigate to the *Issues* route
+* Click the `getIssues` button to get all the issues created for the hard-coded repo
+* Click the `comments` button on any issues to retrieve all the comments for that issues
+* Edit a comment in the text box and click `edit` button to persist changes
+* Delete a comment by clicking the `delete` button on any comment
+* Create a new comment by clicking on `Add new comment` button to toggle the new comment form. 
+Type the comment body in the text box and click `save` to persist the new comment.
+Click the `Close new comment` to close the new comment form when done.
+
+#### Notes
+* For simplicity and time constraints, a token has been hardcoded and therefore automatically revoked by GitHub.
+To use as-is, clone the repo locally, authorize your own repo (by changing the hardcoded `key` and `repo` constants in the Issues module), 
+and run the app locally without pushing to a GitHub repo.
+* Next steps would be to implement a web flow to get the token and persist it in the client session using the `Authorization` end point
+
+#### Framework / Boilerplate
+* This app has been built from a clone of the *react-redux-starter-kit*. See below details.
+
+---
+
 # React Redux Starter Kit
 
 [![Build Status](https://travis-ci.org/davezuko/react-redux-starter-kit.svg?branch=master)](https://travis-ci.org/davezuko/react-redux-starter-kit?branch=master)

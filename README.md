@@ -29,7 +29,7 @@
 
 # Assignment solution
 
-[app screen-shot](./src/routes/Home/assets/app-screenshot.png)
+![app screen-shot](./src/routes/Home/assets/app-screenshot.png)
 
 #### How to use it
 * Navigate to the *Issues* route

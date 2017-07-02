@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-starter-kit",
-  "version": "3.0.1",
-  "description": "Get started with React, Redux, and React-Router!",
+  "name": "react-github-issues",
+  "version": "0.1",
+  "description": "Manage issues comments from GitHub repo - built on react-redux-starter-kit",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/davezuko/react-redux-starter-kit.git"
   },
-  "author": "David Zukowski <david@zuko.me> (http://zuko.me)",
+  "author": "S. Durighello, credits: David Zukowski <david@zuko.me> (http://zuko.me)",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha",

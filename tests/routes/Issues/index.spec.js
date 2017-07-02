@@ -1,11 +1,11 @@
-import CounterRoute from 'routes/Counter'
+import IssuesRoute from 'routes/Issues'
 
-describe('(Route) Counter', () => {
+describe('(Route) Issues', () => {
   it('returns a route configuration object', () => {
-    expect(typeof CounterRoute({})).to.equal('object')
+    expect(typeof IssuesRoute({})).to.equal('object')
   })
 
-  it('has a path \'counter\'', () => {
-    expect(CounterRoute({}).path).to.equal('counter')
+  it('has a path \'issues\'', () => {
+    expect(IssuesRoute({}).path).to.equal('issues')
   })
 })

@@ -41,7 +41,7 @@ Click the `Close new comment` to close the new comment form when done.
 
 #### Notes
 * For simplicity and time constraints, a token has been hardcoded and therefore automatically revoked by GitHub.
-To use as-is, clone the repo locally, authorize your own repo (by changing the hardcoded `key` and `repo` constants in the Issues module), 
+To use as-is, clone the repo locally, authorize your own repo (by changing the hardcoded `key`, `repo` and `user` constants in the [Issues module](https://github.com/sdurighello/react-github-issues/blob/master/src/routes/Issues/modules/issue.js)), 
 and run the app locally without pushing to a GitHub repo.
 * Next steps would be to implement a web flow to get the token and persist it in the client session using the `Authorization` end point
 

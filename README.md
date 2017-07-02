@@ -47,6 +47,10 @@ To use as-is, clone the repo locally, authorize your own repo (by changing the h
 and run the app locally without pushing to a GitHub repo.
 * Next steps would be to implement a web flow to get the token and persist it in the client session using the `Authorization` end point
 
+#### Test
+Added Issues folder test and fixed existing examples.
+![test screen-shot](./src/routes/Home/assets/issues-test.png)
+
 #### Framework / Boilerplate
 * This app has been built from a clone of the *react-redux-starter-kit*. See below details.
 

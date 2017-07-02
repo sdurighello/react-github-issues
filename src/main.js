@@ -2,6 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import createStore from './store/createStore'
 import './styles/main.scss'
+import injectTapEventPlugin from 'react-tap-event-plugin'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
+
+// Needed for onTouchTap
+// http://stackoverflow.com/a/34015469/988941
+injectTapEventPlugin()
 
 // Store Initialization
 // ------------------------------------
@@ -16,7 +23,9 @@ let render = () => {
   const routes = require('./routes/index').default(store)
 
   ReactDOM.render(
-    <App store={store} routes={routes} />,
+    <MuiThemeProvider muiTheme={getMuiTheme()}>
+      <App store={store} routes={routes} />
+    </MuiThemeProvider>,
     MOUNT_NODE
   )
 }
@@ -43,13 +52,13 @@ if (__DEV__) {
 
     // Setup hot module replacement
     module.hot.accept([
-      './components/App',
-      './routes/index',
-    ], () =>
-      setImmediate(() => {
-        ReactDOM.unmountComponentAtNode(MOUNT_NODE)
-        render()
-      })
+        './components/App',
+        './routes/index',
+      ], () =>
+        setImmediate(() => {
+          ReactDOM.unmountComponentAtNode(MOUNT_NODE)
+          render()
+        })
     )
   }
 }

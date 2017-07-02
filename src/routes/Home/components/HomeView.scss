@@ -1,5 +1,63 @@
-.duck {
-  display: block;
-  width: 120px;
-  margin: 1.5rem auto;
+.myFlexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstRow {
+  min-height: 20px;
+  padding: 10px;
+  margin: 10px
+}
+
+.secondRow {
+  min-height: 100px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.column {
+  justify-content: center;
+}
+
+.columnOne {
+  width: 10%
+}
+
+.columnTwo {
+  width: 80%
+}
+
+.columnThree {
+  width: 10%
+}
+
+@media all and (max-width: 800px) {
+  .columnOne {
+    width: 5%
+  }
+
+  .columnTwo {
+    width: 90%
+  }
+
+  .columnThree {
+    width: 5%
+  }
+}
+
+@media all and (max-width: 500px) {
+  .columnOne {
+    width: 0
+  }
+
+  .columnTwo {
+    width: 100%
+  }
+
+  .columnThree {
+    width: 0
+  }
 }

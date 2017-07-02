@@ -29,6 +29,8 @@
 
 # Assignment solution
 
+[app screen-shot](./src/routes/Home/assets/app-screenshot.png)
+
 #### How to use it
 * Navigate to the *Issues* route
 * Click the `getIssues` button to get all the issues created for the hard-coded repo
